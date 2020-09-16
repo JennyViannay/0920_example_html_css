@@ -1,0 +1,64 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+:root {
+    --brand-color : lightcoral;
+    --color-title : blue;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid black;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--brand-color);
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px
+}
+
+.box {
+    background-color: var(--brand-color);
+    width: 200px;
+    border : 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--brand-color);
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+    }
+}
